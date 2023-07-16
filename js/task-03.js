@@ -15,7 +15,7 @@ const images = [
 
 
 const galleryImg = document.querySelector('.gallery')
-console.log(galleryImg);
+
 
 const createEl = images.map(({ url, alt }) =>
   `<li>

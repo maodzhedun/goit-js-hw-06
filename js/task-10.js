@@ -4,15 +4,16 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 const inputCtrl = document.getElementById("controls");
-const inputEl = document.querySelector("input");
 const createBtn = document.querySelector("[data-create]");
 const destroyBtn = document.querySelector("[data-destroy]");
 const collection = document.getElementById("boxes");
+const inputEl = document.querySelector("input");
 
 
 createBtn.addEventListener("click", onClickCreate);
-  
+
 function onClickCreate(event) {
+  collection.innerHTML = "";
   createBoxes(inputEl.value);
 }
 
